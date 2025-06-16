@@ -37,7 +37,7 @@ section {
     display: flex;
 }
 
-#profile{
+#profile-section{
     display: flex;
     justify-content: center;
     gap: 5rem;
@@ -138,7 +138,7 @@ section {
     gap: 1rem;
 }
 
-#about {
+#about-section{
     position: relative;
     border-bottom: 1px solid black;
 }
@@ -188,3 +188,56 @@ section {
 .icon3 {
     height: 2rem;
 }
+
+#experiences-section{
+    border-bottom: 1px solid black;
+}
+
+.experience-sub-title{
+    color:rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+}
+
+.experiences-details-container{
+    display: flex;
+    justify-content: center;
+    gap: 3rem
+}
+
+.article-container{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+
+article{
+    display: flex;
+    width: 12rem;
+    min-width: 9rem;
+    max-width: 9rem;
+    margin: 0.5rem;
+    margin-left: 1rem;
+    height: 3rem;
+}
+
+article img {
+    padding: 0 1rem;
+}
+
+article .icon3{
+}
+
+#experiences-section .about-container{
+    width: 50%;
+    height: 50vh;
+}
+
+.other-about-container .details-container{
+    margin-bottom: 2rem;
+    padding-bottom: 5rem;
+}
+

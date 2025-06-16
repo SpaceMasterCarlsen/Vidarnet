@@ -36,7 +36,7 @@ a:hover{
 }
 
 .logo {
-    background-image: url("/vidarnet/assets/vidarnet-icon.png");
+    background-image: url("/vidarnet/assets/other/vidarnet-icon.png");
     background-size: cover;
     height: 15rem;
     width: 15rem;

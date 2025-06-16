@@ -1,6 +1,6 @@
 const cvButton = document.querySelector(".btn-color-2")
 cvButton.addEventListener("click", () => {
-    window.open('/assets/cv.pdf')
+    window.open('/assets/other/cv.pdf')
 })
 const linkedIn = document.querySelector(".icon")
 linkedIn.addEventListener("click", () => {
