@@ -16,9 +16,25 @@ contactMe.addEventListener('click', () => {
     location.href="#contact"
 })
 
+
 const githubLink = document.querySelector("#github-links1");
 githubLink.addEventListener("click", () => {
-    window.open("https://github.com/SpaceMasterCarlsen");
+    window.open("https://github.com/lucasmodin/DmData-Frontend");
+});
+
+const githubLink2 = document.querySelector("#github-links2");
+githubLink2.addEventListener("click", () => {
+    window.open("https://github.com/lucasmodin/AlignPro");
+});
+
+const githubLink3 = document.querySelector("#github-links3");
+githubLink3.addEventListener("click", () => {
+    window.open("https://github.com/SpaceMasterCarlsen/BackendEksamen");
+});
+
+const githubLink4 = document.querySelector("#github-links4");
+githubLink4.addEventListener("click", () => {
+    window.open("https://github.com/SpaceMasterCarlsen/FrontendEksamen");
 });
 
 const websiteLink = document.querySelector("#website-links1");
