@@ -70,7 +70,7 @@ section {
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 
@@ -161,12 +161,12 @@ section {
 
 .about-pic {
     border-radius: 2rem;
-    height: 27rem;
+    height: 22rem;
     box-shadow: 3px 7px 13px rgba(0, 0, 0, 0.25);
 }
 
 .details-container{
-    padding: 1.5rem;
+    padding: 0.2rem;
     flex: 1;
     background: white;
     border-radius: 2rem;
@@ -175,14 +175,18 @@ section {
     text-align: center;
 }
 
+.text-container p{
+    font-size: 15px;
+}
+
 .section-container {
-    gap: 7rem;
+    gap: 4rem;
     height: 80%;
 }
 
 .section_pic-container{
-    height: 400px;
-    width: 400px;
+    height: 370px;
+    width: 370px;
     margin: auto 0;
 }
 
@@ -197,7 +201,8 @@ section {
 .experience-sub-title{
     color:rgb(85, 85, 85);
     font-weight: 600;
-    font-size: 2.2rem;
+    font-size: 2rem;
+    margin-top: 2rem;
     margin-bottom: 3rem;
 }
 
@@ -212,14 +217,14 @@ section {
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 article{
     display: flex;
     width: 12rem;
-    min-width: 9rem;
-    max-width: 9rem;
+    min-width: 8rem;
+    max-width: 8rem;
     margin: 0.5rem;
     margin-left: 1rem;
     height: 3rem;
@@ -234,32 +239,37 @@ article .icon3{
 
 #experiences-section .about-container{
     width: 50%;
-    height: 50vh;
+    height: 45vh;
 }
 
 .other-about-container .details-container{
     margin-bottom: 2rem;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
 }
 
-#projects-section .details-container{
+#projects-section   .details-container{
     flex: none;
+    padding: 1rem;
     padding-bottom: 3rem
 }
 
 #projects-section .article-container img{
-    width: 26rem;
-    height: 37rem;
+    width: 23rem;
+    height: 33rem;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
+}
+
+#projects-section  h2{
+    font-size: 2rem ;
 }
 
 #projects-section a {
     all: unset;
     cursor: pointer;
     margin: 0rem 0.4rem;
-    padding: 0.75rem 2rem;
-    font-size: 1.2rem;
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
     border-radius: 40px;
     border: 1px solid black
 }
@@ -276,10 +286,10 @@ article .icon3{
 
 #projects-link {
     text-align: center;
-    margin: 3rem 0rem;
+    margin: 2rem 0rem;
 }
 
 #projects-link a{
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 0.2rem 2rem;
 }

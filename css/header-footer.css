@@ -16,8 +16,8 @@ nav{
 .nav-links{
     gap: 4rem;
     list-style: none;
-    font-size: 1.75rem;
-    margin-right: -14rem;
+    font-size: 1.4rem;
+    margin-right: -12rem;
     margin-top: 2rem;
 }
 
@@ -38,13 +38,13 @@ a:hover{
 .logo {
     background-image: url("/vidarnet/assets/other/vidarnet-icon.png");
     background-size: cover;
-    height: 15rem;
-    width: 15rem;
+    height: 11rem;
+    width: 11rem;
 }
 
 #index2{
     margin-top: 1.5rem;
-    margin-left: -15rem;
+    margin-left: -14rem;
 }
 
 #hamburger-nav {
