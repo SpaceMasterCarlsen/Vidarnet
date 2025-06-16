@@ -41,3 +41,15 @@ const websiteLink = document.querySelector("#website-links1");
 websiteLink.addEventListener("click", () => {
     window.open("https://dmdatascience.dk/");
 });
+
+
+function checkIfMobile() {
+    const warning = document.getElementById("mobile-warning");
+    if (window.innerWidth <= 700) {
+        warning.removeAttribute("hidden");
+        warning.style.display = "flex"; // aktiver layout her
+    } else {
+        warning.setAttribute("hidden", true);
+        warning.style.display = "none";
+    }
+}

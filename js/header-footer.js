@@ -105,6 +105,8 @@ function loadNavLogic() {
         hamburgerIcon.classList.toggle("open")
     }
     hamburgerIcon.addEventListener("click", toggleMenu)
+    checkIfMobile()
+
 }
 
 
