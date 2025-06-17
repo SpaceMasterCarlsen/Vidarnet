@@ -413,8 +413,26 @@ form label#fun-label{
 #direct-contact-info h3{
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     color: rgb(85, 85, 85);
     font-weight: 600;
     margin-top: 2rem;
+}
+
+#direct-contact-info img{
+    position: absolute;
+    margin: -0.3rem 4rem;
+}
+
+#direct-contact-info p{
+    margin: 4rem 9rem;
+}
+
+p#contact-text{
+    margin: 2.5rem 6rem;
+}
+
+#direct-contact-info hr{
+    width: 80%;
+    place-self: center;
 }
