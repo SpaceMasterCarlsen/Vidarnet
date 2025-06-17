@@ -312,7 +312,109 @@ article .icon3{
     z-index: 9999;
 }
 
+#contact-section{
+    border-bottom: 1px solid black;
+}
+
+#contact-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
 #contact-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    height: 85%;
+    margin-bottom: 2rem;
+}
+
+#contact-info form{
+    display: grid;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#contact-info form h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0rem;
+    height: 0;
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+#contact-info form label{
+    position: absolute;
+    font-size: 1.1rem;
+    margin-top: 0.9rem;
+    margin-left: 2rem;
+    font-weight: bold;
+}
+
+#contact-info form input{
+    margin: 0rem 1.5rem;
+    padding: 1rem 7rem;
+    width: 55%;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+#contact-info form div {
+    height: 0rem;
+}
+
+form label#fun-label{
+    margin-top: 0.9rem;
+}
+
+#contact-info form textarea {
+    border: 1.5px solid black;
+    margin-left: 1.5rem;
+    border-radius: 5px;
+    height: 10rem;
+    width: 55%;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    padding: 1rem 7rem;
+    resize: none;
+}
+
+#contact-info #submit-button{
+    align-self: center;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+#contact-info #submit-button button{
+    background-color: white;
+    padding: 0.8rem 4rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border: 1px solid black;
+}
+
+#contact-info #submit-button button:hover{
+    transition: all 300ms ease-in-out;
+    background-color: rgb(225, 225, 225);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+
+#direct-contact-info {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#direct-contact-info h3{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    margin-top: 2rem;
 }

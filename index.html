@@ -231,24 +231,35 @@
         </div>
     </section>
     <section id="contact-section">
+        <p class="section_text_p1">Get in</p>
         <h2>Contact</h2>
         <div id="contact-info">
             <form id="contactform">
                 <h3>Contact Formular</h3>
-                <label for="name">NAME*</label>
-                <input type="text" name="name" id="name" required>
-                <label for="mail">EMAIL*</label>
-                <input type="email" name="email" id="mail" required>
-                <label for="mobile">MOBILE</label>
-                <input type="tel" name="mobile" id="mobile">
-                <label for="message">Message*:</label>
-                <textarea name="message" id="message" minlength="3" maxlength="500" required></textarea>
+                <div>
+                    <label for="name">NAME</label>
+                    <input type="text" name="name" id="name" required placeholder="Your name*">
+                </div>
+                <div>
+                    <label for="mail">EMAIL</label>
+                    <input type="email" name="email" id="mail" required placeholder="Your email*">
+                </div>
+                <div>
+                    <label for="mobile">MOBILE</label>
+                    <input type="tel" name="mobile" id="mobile" placeholder="Your mobile number">
+                </div>
+                <div>
+                    <label id="fun-label" for="message">Message*:</label>
+                    <textarea name="message" id="message" minlength="3" maxlength="500" required placeholder="Type here"></textarea>
+                </div>
                 <!-- bruges til bot spam-beskyttelse -->
                 <input type="text" name="_gotcha" style="display:none">
-                <button type="submit">Send</button>
+                <div id="submit-button">
+                    <button type="submit">Send</button>
+                </div>
             </form>
-            <div>
-                <h3>Or Contact Me Via Mail Or Phone</h3>
+            <div id="direct-contact-info">
+                <h3>Or Via Mail/Phone</h3>
                 <div>
                     <img src="assets/icons/location.png" alt="a loction icon" class="icon3">
                     <p>Hvidovre CPH</p>
@@ -271,6 +282,7 @@
             <button id="closeModalBtn">Close</button>
         </div>
     </section>
+    <section></section>
 </main>
 <footer id="footer-container"></footer>
 </body>
