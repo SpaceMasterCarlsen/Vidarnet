@@ -37,8 +37,8 @@ function loadNavLogic() {
     const index3 = document.getElementById('index3');
     const projects = document.getElementById('projects');
     const projects2 = document.getElementById('projects2');
-    const about = document.getElementById('about');
-    const about2 = document.getElementById('about2');
+    const services = document.getElementById('services');
+    const services2 = document.getElementById('services2');
     const contact = document.getElementById('contact');
     const contact2 = document.getElementById('contact2');
 
@@ -72,16 +72,16 @@ function loadNavLogic() {
             window.location.href = "/vidarnet/pages/projects.html";
         });
     }
-    if (about) {
-        about.addEventListener('click', e => {
+    if (services) {
+        services.addEventListener('click', e => {
             e.preventDefault();
-            window.location.href = "/vidarnet/pages/about.html";
+            window.location.href = "/vidarnet/pages/services.html";
         });
     }
-    if(about2){
-        about2.addEventListener('click', e => {
+    if(services2){
+        services2.addEventListener('click', e => {
             e.preventDefault();
-            window.location.href = "/vidarnet/pages/about.html";
+            window.location.href = "/vidarnet/pages/services.html";
         });
     }
     if (contact) {

@@ -123,7 +123,20 @@ a:hover{
 }
 
 
+/* footer par */
+#footer-part {
+    text-align: center;
+    height: 17vh;
+    background: rgba(0, 0, 0, 0.04);
+    margin: 0.5rem ;
+    margin-top: 3rem;
+    padding: 0.7rem;
+    border-top: 1px solid black;
+}
 
+#footer-part p{
+    margin: 0.4rem;
+}
 
 
 @media (max-width: 600px) {
