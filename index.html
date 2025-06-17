@@ -8,8 +8,8 @@
     <title>Homepage</title>
 </head>
 <body>
-<div id="mobile-warning" hidden>
-    Mobilvisning er ikke understøttet. Brug en computer.
+<div id="mobile-warning" hidden="hidden">
+    Mobilvisning er ikke understøttet endnu. Brug venligst en computer. Vi arbejder på at gøre siden mobil venlig.
 </div>
 <header id="header-container"></header>
 <main>
@@ -231,7 +231,45 @@
         </div>
     </section>
     <section id="contact-section">
-
+        <h2>Contact</h2>
+        <div id="contact-info">
+            <form id="contactform">
+                <h3>Contact Formular</h3>
+                <label for="name">NAME*</label>
+                <input type="text" name="name" id="name" required>
+                <label for="mail">EMAIL*</label>
+                <input type="email" name="email" id="mail" required>
+                <label for="mobile">MOBILE</label>
+                <input type="tel" name="mobile" id="mobile">
+                <label for="message">Message*:</label>
+                <textarea name="message" id="message" minlength="3" maxlength="500" required></textarea>
+                <!-- bruges til bot spam-beskyttelse -->
+                <input type="text" name="_gotcha" style="display:none">
+                <button type="submit">Send</button>
+            </form>
+            <div>
+                <h3>Or Contact Me Via Mail Or Phone</h3>
+                <div>
+                    <img src="assets/icons/location.png" alt="a loction icon" class="icon3">
+                    <p>Hvidovre CPH</p>
+                </div>
+                <div>
+                    <img src="assets/icons/phone.png" alt="a phone icon" class="icon3">
+                    <p>+45 93 93 86 60</p>
+                </div>
+                <div>
+                    <img src="assets/icons/mail.png" alt="a mail icon" class="icon3">
+                    <p>Rasmuscarlsen@protonmail.com</p>
+                </div>
+            </div>
+        </div>
+        <!-- Modal popup -->
+        <div id="thanksModal" hidden="hidden">
+            <p>Thanks for your message!</p>
+            <br>
+            <p>You be hearing back from me soon</p>
+            <button id="closeModalBtn">Close</button>
+        </div>
     </section>
 </main>
 <footer id="footer-container"></footer>

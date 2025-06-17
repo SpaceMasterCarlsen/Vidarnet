@@ -106,7 +106,7 @@ function loadNavLogic() {
     }
     hamburgerIcon.addEventListener("click", toggleMenu)
     checkIfMobile()
-
+    postForm()
 }
 
 
