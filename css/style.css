@@ -27,7 +27,7 @@ img.pic1 {
 
 section {
     padding-top: 4vh;
-    height: 96vh;
+    height: 100vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -249,6 +249,7 @@ article .icon3{
 
 #projects-section{
     border-bottom: 1px solid black;
+    height: 120vh;
 }
 
 #projects-section .details-container{
@@ -314,6 +315,7 @@ article .icon3{
 
 #contact-section{
     border-bottom: 1px solid black;
+    height: 112vh;
 }
 
 #contact-section h2 {
@@ -326,7 +328,7 @@ article .icon3{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    height: 85%;
+    height: 77%;
     margin-bottom: 2rem;
 }
 
@@ -355,11 +357,17 @@ article .icon3{
 }
 
 #contact-info form input{
+    all: unset;
+    border: 1px solid black;
     margin: 0rem 1.5rem;
     padding: 1rem 7rem;
     width: 55%;
     border-radius: 5px;
     font-size: 1.1rem;
+}
+
+#contact-info form input:focus{
+    border: 2px solid black;
 }
 
 #contact-info form div {
@@ -371,7 +379,7 @@ form label#fun-label{
 }
 
 #contact-info form textarea {
-    border: 1.5px solid black;
+    border: 1px solid black;
     margin-left: 1.5rem;
     border-radius: 5px;
     height: 10rem;
@@ -434,7 +442,7 @@ p#contact-text{
 
 #direct-contact-info hr{
     width: 80%;
-    place-self: center;
+    margin: 0rem 4rem;
 }
 
 #thanksModal {

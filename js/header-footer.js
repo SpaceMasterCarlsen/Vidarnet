@@ -1,17 +1,10 @@
 document.addEventListener("DOMContentLoaded", script);
 
 function script() {
-    const basePath = getComponentBasePath();
-    loadComponent(basePath + "header.html", "header-container", loadNavLogic);
-    loadComponent(basePath + "footer.html", "footer-container");
-}
+    const basePath = window._env_?.BASE_PATH || "";
 
-function getComponentBasePath() {
-    const path = window.location.pathname;
-    if (path.includes("/pages/")) {
-        return "header-footer/";
-    }
-    return "pages/header-footer/";
+    loadComponent(basePath + "pages/header-footer/header.html", "header-container", loadNavLogic);
+    loadComponent(basePath + "pages/header-footer/footer.html", "footer-container");
 }
 
 function loadComponent(url, containerID, callback) {
@@ -32,6 +25,8 @@ function loadComponent(url, containerID, callback) {
 }
 
 function loadNavLogic() {
+    const basePath = window._env_?.BASE_PATH || "";
+
     const index = document.getElementById('index');
     const index2 = document.getElementById('index2');
     const index3 = document.getElementById('index3');
@@ -45,70 +40,69 @@ function loadNavLogic() {
     if (index) {
         index.addEventListener('click', e => {
             e.preventDefault();
-            window.location.href = "/vidarnet/index.html";
+            window.location.href = basePath + "index.html";
         });
     }
     if (index2) {
         index2.addEventListener('click', e => {
             e.preventDefault();
-            window.location.href = "/vidarnet/index.html";
+            window.location.href = basePath + "index.html";
         });
     }
     if (index3) {
         index3.addEventListener('click', e => {
             e.preventDefault();
-            window.location.href = "/vidarnet/index.html";
+            window.location.href = basePath + "index.html";
         });
     }
     if (projects) {
         projects.addEventListener('click', e => {
             e.preventDefault();
-            window.location.href = "/vidarnet/pages/projects.html";
+            window.location.href = basePath + "pages/projects.html";
         });
     }
-    if(projects2){
+    if (projects2) {
         projects2.addEventListener('click', e => {
             e.preventDefault();
-            window.location.href = "/vidarnet/pages/projects.html";
+            window.location.href = basePath + "pages/projects.html";
         });
     }
     if (services) {
         services.addEventListener('click', e => {
             e.preventDefault();
-            window.location.href = "/vidarnet/pages/services.html";
+            window.location.href = basePath + "pages/services.html";
         });
     }
-    if(services2){
+    if (services2) {
         services2.addEventListener('click', e => {
             e.preventDefault();
-            window.location.href = "/vidarnet/pages/services.html";
+            window.location.href = basePath + "pages/services.html";
         });
     }
     if (contact) {
         contact.addEventListener('click', e => {
             e.preventDefault();
-            window.location.href = "/vidarnet/pages/contact.html";
+            window.location.href = basePath + "pages/contact.html";
         });
     }
-    if(contact2){
+    if (contact2) {
         contact2.addEventListener('click', e => {
             e.preventDefault();
-            window.location.href = "/vidarnet/pages/contact.html";
+            window.location.href = basePath + "pages/contact.html";
         });
     }
 
-    const hamburgerIcon = document.querySelector(".hamburger-icon")
-    const menu = document.querySelector(".menu-links")
+    // Hamburger menu
+    const hamburgerIcon = document.querySelector(".hamburger-icon");
+    const menu = document.querySelector(".menu-links");
 
-    function toggleMenu(){
-        menu.classList.toggle("open")
-        hamburgerIcon.classList.toggle("open")
+    if (hamburgerIcon && menu) {
+        hamburgerIcon.addEventListener("click", () => {
+            menu.classList.toggle("open");
+            hamburgerIcon.classList.toggle("open");
+        });
     }
-    hamburgerIcon.addEventListener("click", toggleMenu)
-    checkIfMobile()
-    postForm()
+
+    checkIfMobile();
+    postForm();
 }
-
-
-
-
