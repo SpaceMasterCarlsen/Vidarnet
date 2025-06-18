@@ -82,13 +82,13 @@ function loadNavLogic() {
     if (contact) {
         contact.addEventListener('click', e => {
             e.preventDefault();
-            window.location.href = basePath + "pages/contact.html";
+            window.location.href = basePath + "index.html#contact-section";
         });
     }
     if (contact2) {
         contact2.addEventListener('click', e => {
             e.preventDefault();
-            window.location.href = basePath + "pages/contact.html";
+            window.location.href = basePath + "index.html#contact-section";
         });
     }
 
