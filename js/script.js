@@ -47,10 +47,14 @@ projectLink.addEventListener("click", () => {
     window.location.href = 'pages/projects.html';
 });
 
+function isMobile() {
+    return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+}
+
 //Skal slettes når mobile view er lavet, så den ikke driller :)
 function checkIfMobile() {
     const warning = document.getElementById("mobile-warning");
-    if (window.innerWidth <= 700) {
+    if (isMobile()) {
         warning.removeAttribute("hidden");
         warning.style.display = "flex"; // aktiver layout her
     } else {
