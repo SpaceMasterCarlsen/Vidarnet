@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p{
+    color: rgb(85, 85, 85);
+}
+
+.slides {
+    display: none;
+}
+
+.slides img, .slides video {
+    width: 30vw;
+    height: 30vh;
+    object-fit: cover;
+}
