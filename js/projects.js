@@ -22,3 +22,26 @@ document.querySelectorAll('.project-box').forEach(project => {
 
     showSlide(currentIndex)
 })
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.slides');
+
+    slides.forEach(slide => {
+        slide.addEventListener('click', () => {
+            const media = slide.querySelector('video, img');
+            if(media instanceof HTMLVideoElement){
+                return
+            }
+            if (media) {
+                if (media.requestFullscreen) {
+                    media.requestFullscreen();
+                } else if (media.webkitRequestFullscreen) {
+                    media.webkitRequestFullscreen();
+                } else if (media.msRequestFullscreen) {
+                    media.msRequestFullscreen();
+                }
+            }
+        });
+    });
+});
